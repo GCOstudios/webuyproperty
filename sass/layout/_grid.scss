@@ -1,0 +1,19 @@
+html {
+  -webkit-font-smoothing: antialiased; // all webkit
+  -moz-osx-font-smoothing: grayscale; // firefox
+}
+
+body {
+  font-family: $font-family-1;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $d1;
+}
+
+// Main Content layout
+.site-content {
+  @include compartment;
+  margin-top: cre(150px);
+  margin-bottom: cre(40px);
+}

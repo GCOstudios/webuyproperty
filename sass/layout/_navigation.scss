@@ -1,0 +1,15 @@
+#site-navigation {
+  margin-left: auto;
+
+  .menu-toggle {
+    display: none;
+  }
+
+  // Primary menu container
+  .menu {}
+
+  // Unorder list links
+  .nav-menu {
+    @include list-reset;
+  }
+} // #site-navigation
