@@ -1,0 +1,1 @@
+jQuery(function(t){"use strict";({init:function(){this.customScript()},customScript:function(){}}).init()});
