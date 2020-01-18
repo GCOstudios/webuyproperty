@@ -1,0 +1,22 @@
+// ================================
+// Skip to content link
+// ================================
+
+.screen-reader-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: underline;
+  transition: transform .1s ease-in;
+  transform: translateY(-100%);
+  z-index: 9000;
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
