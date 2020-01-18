@@ -1,3 +1,13 @@
+/*!
+Theme Name: webuyproperty
+Theme URI: http://underscores.me/
+Author: Jose Guerra
+Author URI: https://jguerra.dev
+Description: A custom theme
+Version: 1.0.0
+Text Domain: webuyproperty
+*/
+
 // Sass file structure best practices
 // https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
 
@@ -39,3 +49,32 @@
 // |   |– _jquery-ui.scss    // jQuery UI
 // |
 // `– main.scss 
+
+
+// Abstracts
+// ==========================================================================
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+// Base
+// ==========================================================================
+@import
+  'base/bootstrap-reboot',
+  'base/typography';
+
+// Components
+// ==========================================================================
+@import
+  'components/accessibility';
+
+// Layout
+// ==========================================================================
+@import
+  'layout/grid',
+  'layout/header',
+  'layout/navigation',
+  'layout/footer';
+
+// Pages
+// ==========================================================================
