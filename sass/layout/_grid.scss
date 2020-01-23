@@ -9,8 +9,4 @@ body {
 }
 
 // Main Content layout
-.site-content {
-  @include compartment;
-  margin-top: cre(150px);
-  margin-bottom: cre(40px);
-}
+.site-content {}
