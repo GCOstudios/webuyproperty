@@ -11,5 +11,11 @@
   // Unorder list links
   .nav-menu {
     @include list-reset;
+    display: flex;
+    flex-flow: row wrap;
+
+    > li {
+      margin-right: cre(10px);
+    }
   }
 } // #site-navigation
