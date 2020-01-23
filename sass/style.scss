@@ -65,8 +65,8 @@ Text Domain: webuyproperty
 
 // Components
 // ==========================================================================
-// @import
-//   'components/accessibility';
+@import
+  'components/accessibility';
 
 // Layout
 // ==========================================================================
@@ -78,3 +78,5 @@ Text Domain: webuyproperty
 
 // Pages
 // ==========================================================================
+@import
+  'pages/home';
