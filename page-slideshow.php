@@ -12,7 +12,7 @@ get_header();
 
     <?php
       if ( shortcode_exists( 'slick-slider' )) {
-        echo do_shortcode('[slick-slider]');
+        echo do_shortcode('[slick-slider design="design-1"]');
         echo 'The shortcode exists';
       }
     ?>
