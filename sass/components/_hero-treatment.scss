@@ -1,4 +1,21 @@
-.hero-treatement {
+.hero-treatment {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100vh;
+  max-height: cre(700px);
+  position: relative;
+
+  .featured-caption {
+    background-color: rgba(white, 0.7);
+    padding: cre(20px);
+    position: absolute;
+    bottom: cre(40px);
+    right: cre(40px);
+
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
