@@ -15,7 +15,21 @@
     flex-flow: row wrap;
 
     > li {
-      margin-right: cre(10px);
+      margin-right: cre(40px);
+
+      a {
+        font-size: cre(21px);
+        font-weight: bold;
+        line-height: cre(25px);
+        color: $m1;
+        transition: color 0.5s;
+
+        &:focus,
+        &:hover {
+          text-decoration: none;
+          color: darken($m1, 10%);
+        }
+      }
     }
   }
 } // #site-navigation
