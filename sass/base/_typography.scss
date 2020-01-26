@@ -3,6 +3,18 @@
 
 $font-family-1: 'Montserrat', sans-serif;
 
-$font-size: cre(25px);
-$font-weight: 500;
-$line-height: cre(34px);
+h1, h2, h3, h4, h5, h6 {
+  color: $m1;
+}
+
+h1 {
+  font-size: cre(40px);
+  font-weight: 600;
+  line-height: cre(49px);
+}
+
+h2 {
+  font-size: cre(37px);
+  font-weight: bold;
+  line-height: cre(43px);
+}
