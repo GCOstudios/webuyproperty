@@ -18,13 +18,15 @@ get_header();
         the_post();
     ?>
 
-    <div class="hero-treatment" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
+    <?php if (has_post_thumbnail()) { ?>
+      <div class="hero-treatment" style="background-image: url('<?php echo $backgroundImg[0]; ?>');">
         <?php
           if(!empty($get_description)){//If description is not empty show the div
             echo '<div class="featured-caption"><p>' . $get_description . '</p></div>';
           }
         ?>
-    </div>
+      </div>
+    <?php } ?>
 
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
