@@ -8,11 +8,15 @@
   position: relative;
 
   .featured-caption {
-    background-color: rgba(white, 0.7);
+    font-size: cre(43px);
+    font-weight: 600;
+    line-height: cre(43px);
+    color: white;
     padding: cre(20px);
     position: absolute;
-    bottom: cre(40px);
+    bottom: cre(60px);
     right: cre(40px);
+    text-align: right;
 
     p {
       margin-bottom: 0;
