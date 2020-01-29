@@ -9,4 +9,70 @@
     padding: cre(40px);
     text-align: center;
   }
+
+  // Info Icons
+  // =================================
+  .info-icons {
+
+    .house-icon {
+      padding-top: cre(160px);
+      position: relative;
+
+      &::before {
+        @include font-icon('\e906');
+        font-size: cre(110px);
+        color: $m1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    } // .house-icon
+
+    .clock-icon {
+      padding-top: cre(160px);
+      position: relative;
+
+      &::before {
+        @include font-icon('\e904');
+        font-size: cre(110px);
+        color: $m1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    } // .clock-icon
+
+    .cash-icon {
+      padding-top: cre(160px);
+      position: relative;
+
+      &::before {
+        @include font-icon('\e908');
+        font-size: cre(110px);
+        color: $m1;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    } // .cash-icon
+  }
+
+  // Quick Section
+  // =================================
+  .quick-section-container {
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: rgba(0,0,0,0.33);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }
