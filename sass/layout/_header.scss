@@ -5,6 +5,7 @@
   align-items: center;
   background-color: rgba(white, 0.9);
   border-bottom: 1px solid $m1;
+  padding-left: cre(50px);
   position: fixed;
   top: 0;
   left: 0;
@@ -14,8 +15,9 @@
 
   .admin-bar & {
     top: cre(32px);
-  }
+  } // .admin-bar
 
+  // Site Branding
   .site-branding {
 
     .site-title {
@@ -24,6 +26,28 @@
 
     .site-description {
       display: none;
+    }
+  } // .site-branding
+
+  // Search Button
+  .search-button {
+    font-size: 0;
+    background-color: $m1;
+    border: 0;
+    color: transparent;
+    width: cre(70px);
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      @include font-icon('\e90c');
+      font-size: cre(20px);
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }
