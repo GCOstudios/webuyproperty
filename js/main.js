@@ -1,1 +1,1 @@
-jQuery(function(t){"use strict";({init:function(){this.customScript()},customScript:function(){}}).init()});
+jQuery(function(t){"use strict";({init:function(){this.quickPropertyTitle()},quickPropertyTitle:function(){var i=t(".quick-section-container .quick-section-title");t(".quick-section-container").prepend(i)}}).init()});
