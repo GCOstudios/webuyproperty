@@ -52,7 +52,9 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
+    </nav><!-- #site-navigation -->
+    <button class="search-button">Open Search</button>
+    <?php get_search_form(); ?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
