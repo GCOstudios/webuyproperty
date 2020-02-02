@@ -67,12 +67,24 @@
 
     &::before {
       content: '';
-      background-color: rgba(0,0,0,0.33);
+      background-color: rgba(0,0,0,0.5);
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
     }
-  }
+
+    // Quiction Section Title
+    .quick-section-title {
+      font-size: cre(40px);
+      font-weight: 600;
+      line-height: cre(49px);
+      color: white;
+      margin-bottom: cre(100px);
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+  } // .quick-section-container
 }
