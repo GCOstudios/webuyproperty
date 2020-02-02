@@ -11,13 +11,15 @@ jQuery(function($) {
     ENHANCEMENTS = {
 
     init: function() {
-      this.customScript();
+      this.quickPropertyTitle();
     },
 
     // Navigation auto-close on click
     // ==============================================
-    customScript: function() {
-      // your script here
+    quickPropertyTitle: function() {
+      var $quickTitle = $('.quick-section-container .quick-section-title');
+
+      $('.quick-section-container').prepend($quickTitle);
     }
 
   };
