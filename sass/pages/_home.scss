@@ -105,4 +105,63 @@
       text-align: center;
     }
   } // .quick-section-container
+
+  // Contact icons section
+  // =================================
+  .contact-icons {
+
+    .phone-column {
+      margin-left: cre(100px);
+      position: relative;
+
+      &::before {
+        @include font-icon('\e90b');
+        font-size: cre(30px);
+        position: absolute;
+        top: 45%;
+        left: -70px;
+        transform: translate(0, -50%);
+        z-index: 1;
+      }
+
+      &::after {
+        content: '';
+        background-color: $m1;
+        border-radius: 50%;
+        width: cre(78px);
+        height: cre(78px);
+        position: absolute;
+        top: 45%;
+        left: -95px;
+        transform: translate(0, -50%);
+      }
+    }
+
+    .email-column {
+      margin-left: cre(100px);
+      position: relative;
+
+      &::before {
+        @include font-icon('\e905');
+        font-size: cre(30px);
+        position: absolute;
+        top: 45%;
+        left: -70px;
+        transform: translate(0, -50%);
+        z-index: 1;
+      }
+
+      &::after {
+        content: '';
+        background-color: $m1;
+        border-radius: 50%;
+        width: cre(78px);
+        height: cre(78px);
+        position: absolute;
+        top: 45%;
+        left: -95px;
+        transform: translate(0, -50%);
+      }
+    }
+  }
 }
