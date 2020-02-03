@@ -57,8 +57,26 @@
         left: 50%;
         transform: translateX(-50%);
       }
+
+      &::after {
+        display: none;
+      }
     } // .cash-icon
-  }
+
+    .box-item {
+      position: relative;
+
+      &::after {
+        @include font-icon('\e901');
+        font-size: cre(50px);
+        color: $s3;
+        position: absolute;
+        top: 50%;
+        right: cre(-40px);
+        transform: translateY(-50%);
+      }
+    }
+  } // info-icons
 
   // Quick Section
   // =================================
