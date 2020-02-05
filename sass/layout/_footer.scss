@@ -2,9 +2,22 @@
   background-color: $m3;
   color: white;
   padding: cre(40px);
-  text-align: center;
 
   a {
     color: white;
   }
+}
+
+// Footer Top Row
+// =========================
+.footer-top-row {
+  padding: cre(20px) 0 cre(80px);
+}
+
+// Footer Bottom Row
+// =========================
+.footer-bottom-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
