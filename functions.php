@@ -160,7 +160,7 @@ add_action( 'widgets_init', 'webuyproperty_widgets_init' );
  * Enqueue scripts and styles.
  */
 function webuyproperty_scripts() {
-	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200203' );
+	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200205' );
 
 	wp_enqueue_script( 'webuyproperty-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
