@@ -13,10 +13,15 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="footer-top-row">
-      <p>More to come here</p>
+      <div class="">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/footer-logo.png" />
+      </div>
     </div><!-- .footer-top-row -->
     <div class="footer-bottom-row">
-      <p>And more here too</p>
+      <?php if( dynamic_sidebar( 'footer-widget-1' ) ) : endif ?>
+      <?php if( dynamic_sidebar( 'footer-widget-2' ) ) : endif ?>
+      <?php if( dynamic_sidebar( 'footer-widget-3' ) ) : endif ?>
+      <?php if( dynamic_sidebar( 'footer-widget-4' ) ) : endif ?>
     </div><!-- .footer-bottom-row -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
