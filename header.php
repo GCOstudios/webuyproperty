@@ -54,7 +54,12 @@
 			?>
     </nav><!-- #site-navigation -->
     <button class="search-button">Open Search</button>
-    <?php get_search_form(); ?>
+    <div class="search-container">
+      <?php get_search_form(); ?>
+      <button class='close-search'>
+        Close Search
+      </button>
+    </div><!-- .search-container -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
