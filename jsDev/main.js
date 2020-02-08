@@ -11,7 +11,20 @@ jQuery(function($) {
     ENHANCEMENTS = {
 
     init: function() {
+      this.searchButton(),
       this.quickPropertyTitle();
+    },
+
+    // Navigation auto-close on click
+    // ==============================================
+    searchButton: function() {
+      $('.search-button').on('click', function() {
+        $('body').addClass('search-is-active');
+      });
+
+      $('.close-search').on('click', function() {
+        $('body').removeClass('search-is-active');
+      });
     },
 
     // Navigation auto-close on click
