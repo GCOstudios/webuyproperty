@@ -44,7 +44,8 @@ if ( ! function_exists( 'webuyproperty_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'webuyproperty' ),
+      'menu-1' => esc_html__( 'Primary', 'webuyproperty' ),
+      'menu-2' => esc_html__( 'Secondary', 'webuyproperty' ),
 		) );
 
 		/*
@@ -160,13 +161,15 @@ add_action( 'widgets_init', 'webuyproperty_widgets_init' );
  * Enqueue scripts and styles.
  */
 function webuyproperty_scripts() {
-	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200208' );
+	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200209' );
 
 	wp_enqueue_script( 'webuyproperty-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-  wp_enqueue_script( 'webuyproperty-main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '20200208', true );
+  wp_enqueue_script( 'webuyproperty-main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '20200209', true );
   
   wp_enqueue_script( 'webuyproperty-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+  wp_enqueue_script( 'webuyproperty-feefo', 'https://api.feefo.com/api/javascript/example-retail-merchant', array(), '20200209', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
