@@ -33,3 +33,27 @@
     }
   }
 } // #site-navigation
+
+
+.footer-links {
+
+  .menu-footer-container {
+    padding-top: cre(20px);
+
+    // The UL element
+    .menu {
+      @include list-reset;
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        font-size: cre(12px);
+        margin-right: cre(30px);
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
