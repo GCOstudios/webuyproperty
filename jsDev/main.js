@@ -11,8 +11,25 @@ jQuery(function($) {
     ENHANCEMENTS = {
 
     init: function() {
+      this.headerOpacity(),
       this.searchButton(),
       this.quickPropertyTitle();
+    },
+
+    // Change header opacity on scroll
+    // ==============================================
+    headerOpacity: function() {
+      var $header = $('.site-header');
+
+      $(window).on('scroll', function() {
+        var $scroll = $(window).scrollTop();
+
+        if ($scroll >= 300) {
+          $header.addClass('darken-header');
+        } else {
+          $header.removeClass('darken-header');
+        }
+      });
     },
 
     // Navigation auto-close on click
