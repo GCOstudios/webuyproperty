@@ -11,13 +11,46 @@
 // Footer Top Row
 // =========================
 .footer-top-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
   padding: cre(20px) 0 cre(80px);
+
+  .footer-logo {}
 }
 
 // Footer Bottom Row
 // =========================
 .footer-bottom-row {
+  font-size: cre(17px);
+  font-weight: 600;
+  line-height: cre(25px);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: flex-end;
+
+  .footer-widget-1 {
+    margin-right: cre(60px);
+  }
+
+  .footer-widget-2 {
+    margin-right: auto;
+  }
+
+  .footer-widget-3 {
+    font-size: cre(12px);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-right: cre(30px);
+    text-align: right;
+  }
+
+  .footer-widget-4 {
+
+    img {
+      width: auto;
+      max-height: 42px;
+    }
+  }
 }
