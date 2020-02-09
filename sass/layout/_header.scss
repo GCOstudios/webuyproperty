@@ -11,7 +11,12 @@
   left: 0;
   width: 100%;
   height: cre(113px);
+  transition: 0.5s ease;
   z-index: 10;
+
+  &.darken-header {
+    background-color: rgba(white, 1);
+  }
 
   .admin-bar & {
     top: cre(32px);
