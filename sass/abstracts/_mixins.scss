@@ -61,11 +61,29 @@
     list-style: none;
   }
 
-    li {
-       margin: 0;
-       padding: 0;
-    }
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
 
+// ================================
+// Button Reset
+// ================================
+
+// Example usage:
+// .trigger {
+//   @include button-reset;
+// }
+
+@mixin button-reset($complete: true) {
+  border: 0;
+  background: none;
+
+  @if $complete {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 
