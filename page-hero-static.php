@@ -24,6 +24,10 @@ get_header();
           if(!empty($get_description)){//If description is not empty show the div
             echo '<div class="featured-caption"><p>' . $get_description . '</p></div>';
           }
+
+          echo '<div class="hero-form-container"><h3>Enter your postcode</h3>';
+          echo do_shortcode( '[contact-form-7 id="118" html_id="hero-form" html_class="for post-code-submit" title="Contact form 1"]' );
+          echo '</div>';
         ?>
       </div>
     <?php } ?>
