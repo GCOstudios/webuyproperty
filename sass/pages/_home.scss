@@ -9,6 +9,16 @@
     padding: cre(40px);
     text-align: center;
   }
+  
+  // postcode form
+  // =================================
+  .postcode-form {
+
+    h2 {
+      color: $s4;
+      margin-bottom: cre(40px);
+    }
+  }
 
   // Info Icons
   // =================================
@@ -109,6 +119,10 @@
   // Contact icons section
   // =================================
   .contact-icons {
+
+    a {
+      color: white;
+    }
 
     .phone-column {
       margin-left: cre(100px);
