@@ -16,7 +16,12 @@
   justify-content: space-between;
   padding: cre(20px) 0 cre(80px);
 
-  .footer-logo {}
+  .footer-logo {
+
+    img {
+      max-width: cre(225px);
+    }
+  }
 }
 
 // Footer Bottom Row
