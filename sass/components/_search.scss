@@ -5,7 +5,7 @@
   align-items: center;
   background-color: rgba(black, 0.85);
   width: 100%;
-  height: cre(250px);
+  height: cre(150px);
   position: absolute;
   top: 0;
   left: 0;
@@ -52,14 +52,23 @@
 }
 
 .search-form {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+
+  label {
+    margin-bottom: 0;
+  }
 
   .search-field {
     border: 0;
+    border-radius: 8px 0 0 8px;
     padding: 0.5rem 1rem;
   }
 
   .search-submit {
     background-color: $m1;
+    border-radius: 0 8px 8px 0;
     color: white;
     border: 0;
     padding: 0.5rem 1rem;
