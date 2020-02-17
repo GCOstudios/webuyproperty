@@ -11,6 +11,13 @@
     margin: 0;
   }
 
+  &.white {
+
+    input[type='text'] {
+      background-color: white;
+    }
+  }
+
   input[type='text'] {
     background-color: #f1f1f1;
     border-radius: 8px 0 0 8px;
@@ -59,6 +66,10 @@
   bottom: cre(70px);
   left: cre(80x);
 
+  .contact-us & {
+    display: none;
+  }
+
   h3 {
     color: white;
     margin-bottom: cre(20px);
@@ -85,3 +96,73 @@
     max-height: cre(71px);
   }
 }
+
+// Contact form
+// ==================================
+.contact-form {
+  width: 100%;
+  max-width: cre(700px);
+  margin-left: auto;
+  margin-right: auto;
+
+  label {
+    font-weight: bold;
+    color: $m3;
+    width: 100%;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'] {
+    padding: cre(10px);
+    width: 100%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .name-fields {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+    label {
+      margin-right: cre(30px);
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    span {
+      display: block;
+    }
+  } // .name-fields
+
+  input[type='submit'] {
+    @include button-reset;
+    font-size: cre(21px);
+    font-weight: 600;
+    line-height: cre(35px);
+    background-color: $m2;
+    border-radius: 11px;
+    color: white;
+    padding: cre(10px) cre(30px);
+    text-transform: uppercase;
+    transition: 0.3s;
+
+    &:focus,
+    &:hover {
+      background-color: darken($m2, 10%);
+    }
+  }
+
+  .button-container {
+    text-align: right;
+
+    .ajax-loader {
+      display: none;
+    }
+  }
+} // .contact-form
