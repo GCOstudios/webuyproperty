@@ -14,6 +14,7 @@ jQuery(function($) {
       this.headerOpacity(),
       this.searchButton(),
       this.quickPropertyTitle(),
+      this.inPageScroll(),
       this.customBodyClass(),
       this.animations();
     },
@@ -52,6 +53,24 @@ jQuery(function($) {
       var $quickTitle = $('.quick-section-container .quick-section-title');
 
       $('.quick-section-container').prepend($quickTitle);
+    },
+
+    // Custom Scroll to section
+    // ==============================================
+    inPageScroll: function() {
+      // When clicking any of the sections smooth scroll to it.
+      $('a[href*="#process"], a[href*="#who"], a[href*="#faq"]').on('click', function(e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top - 250,
+        }, 1500);
+      });
+
+      // Smooth scroll to top of page
+      $('.scroll-up').on('click', function() {
+        $('html, body').animate({scrollTop: '0px'}, 1500);
+      });
     },
 
     // Custom body classes
