@@ -13,5 +13,23 @@ body {
   margin-bottom: cre(40px);
 }
 
+.pink-title {
+  font-size: cre(44px);
+  line-height: cre(54px);
+  color: $m5;
+}
+
+.max-width {
+  max-width: cre(571px);
+}
+
+.margin-left {
+  margin-left: auto;
+}
+
+.margin-bottom-neg-16 {
+  margin-bottom: cre(-16px);
+}
+
 // Main Content layout
 .site-content {}
