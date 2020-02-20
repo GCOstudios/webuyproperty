@@ -30,6 +30,23 @@
           color: darken($m1, 10%);
         }
       }
+
+      &.current-menu-item {
+
+        a {
+          position: relative;
+
+          &::after {
+            content: '';
+            background-color: $m1;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+          }
+        }
+      }
     }
   }
 } // #site-navigation
