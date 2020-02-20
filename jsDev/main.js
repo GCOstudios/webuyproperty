@@ -58,18 +58,21 @@ jQuery(function($) {
     // Custom Scroll to section
     // ==============================================
     inPageScroll: function() {
+      var $heroHeight = $('.hero-treatment').height();
+      console.log($heroHeight);
+
       // When clicking any of the sections smooth scroll to it.
       $('a[href*="#process"], a[href*="#who"], a[href*="#faq"]').on('click', function(e) {
         e.preventDefault();
 
         $('html, body').animate({
-          scrollTop: $($(this).attr('href')).offset().top - 250,
+          scrollTop: $($(this).attr('href')).offset().top - 260,
         }, 1500);
       });
 
       // Smooth scroll to top of page
       $('.scroll-up').on('click', function() {
-        $('html, body').animate({scrollTop: '0px'}, 1500);
+        $('html, body').animate({scrollTop: ($heroHeight - 104)}, 1500);
       });
     },
 
