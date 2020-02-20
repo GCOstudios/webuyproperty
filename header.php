@@ -53,13 +53,13 @@
 			) );
 			?>
     </nav><!-- #site-navigation -->
-    <button class="search-button">Open Search</button>
+    <!-- <button class="search-button">Open Search</button>
     <div class="search-container">
-      <?php get_search_form(); ?>
+      <?php // get_search_form(); ?>
       <button class='close-search'>
         Close Search
       </button>
-    </div><!-- .search-container -->
+    </div>.search-container -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
