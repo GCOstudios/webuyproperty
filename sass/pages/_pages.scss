@@ -70,6 +70,18 @@
   }
 }
 
+.help-list {
+
+  ul {
+
+    > li {
+      font-size: cre(24px);
+      font-weight: 500;
+      color: $m3;
+    }
+  }
+}
+
 
 // Why Choose us
 // ==========================
