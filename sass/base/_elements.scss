@@ -5,3 +5,15 @@ figure {
     margin-bottom: 0;
   }
 }
+
+// Link colours
+a {
+  color: $m1;
+  transition: 0.3s;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+    color: darken($m1, 10%);
+  }
+}
