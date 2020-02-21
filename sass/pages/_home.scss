@@ -77,14 +77,16 @@
     .box-item {
       position: relative;
 
-      &::after {
-        @include font-icon('\e901');
-        font-size: cre(50px);
-        color: $s3;
-        position: absolute;
-        top: 50%;
-        right: cre(-40px);
-        transform: translateY(-50%);
+      @media screen and (min-width: 600px) {
+        &::after {
+          @include font-icon('\e901');
+          font-size: cre(50px);
+          color: $s3;
+          position: absolute;
+          top: 50%;
+          right: cre(-40px);
+          transform: translateY(-50%);
+        }
       }
     }
   } // info-icons
@@ -125,57 +127,61 @@
       color: white;
     }
 
-    .phone-column {
-      margin-left: cre(100px);
-      position: relative;
-
-      &::before {
-        @include font-icon('\e90b');
-        font-size: cre(30px);
-        position: absolute;
-        top: 45%;
-        left: -70px;
-        transform: translate(0, -50%);
-        z-index: 1;
+    @media screen and (min-width: 600px) {
+      .phone-column {
+        margin-left: cre(100px);
+        position: relative;
+  
+        &::before {
+          @include font-icon('\e90b');
+          font-size: cre(30px);
+          position: absolute;
+          top: 45%;
+          left: -70px;
+          transform: translate(0, -50%);
+          z-index: 1;
+        }
+  
+        &::after {
+          content: '';
+          background-color: $m1;
+          border-radius: 50%;
+          width: cre(78px);
+          height: cre(78px);
+          position: absolute;
+          top: 45%;
+          left: -95px;
+          transform: translate(0, -50%);
+        }
       }
-
-      &::after {
-        content: '';
-        background-color: $m1;
-        border-radius: 50%;
-        width: cre(78px);
-        height: cre(78px);
-        position: absolute;
-        top: 45%;
-        left: -95px;
-        transform: translate(0, -50%);
-      }
-    }
-
-    .email-column {
-      margin-left: cre(100px);
-      position: relative;
-
-      &::before {
-        @include font-icon('\e905');
-        font-size: cre(30px);
-        position: absolute;
-        top: 45%;
-        left: -70px;
-        transform: translate(0, -50%);
-        z-index: 1;
-      }
-
-      &::after {
-        content: '';
-        background-color: $m1;
-        border-radius: 50%;
-        width: cre(78px);
-        height: cre(78px);
-        position: absolute;
-        top: 45%;
-        left: -95px;
-        transform: translate(0, -50%);
+  
+      .email-column {
+        margin-left: cre(100px);
+        position: relative;
+  
+        &::before {
+          @include font-icon('\e905');
+          font-size: cre(30px);
+          position: absolute;
+          top: 45%;
+          left: -70px;
+          transform: translate(0, -50%);
+          z-index: 1;
+        }
+  
+        
+  
+        &::after {
+          content: '';
+          background-color: $m1;
+          border-radius: 50%;
+          width: cre(78px);
+          height: cre(78px);
+          position: absolute;
+          top: 45%;
+          left: -95px;
+          transform: translate(0, -50%);
+        }
       }
     }
   }
