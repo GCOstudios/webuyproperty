@@ -59,7 +59,6 @@ jQuery(function($) {
     // ==============================================
     inPageScroll: function() {
       var $heroHeight = $('.hero-treatment').height();
-      console.log($heroHeight);
 
       // When clicking any of the sections smooth scroll to it.
       $('a[href*="#process"], a[href*="#who"], a[href*="#faq"]').on('click', function(e) {
@@ -83,6 +82,7 @@ jQuery(function($) {
           $howItWorks = $('.how-it-works-child').length,
           $whyChoose = $('.why-choose-us-child').length,
           $contactUs = $('.contact-us-child').length,
+          $postcode = $('.cf-postcode-complete').length,
           $body = $('body');
 
       if ($about) {
@@ -93,6 +93,8 @@ jQuery(function($) {
         $body.addClass('why-choose-us');
       } else if ($contactUs) {
         $body.addClass('contact-us');
+      } else if ($postcode) {
+        $body.addClass('postcode-complete');
       }
     },
 
