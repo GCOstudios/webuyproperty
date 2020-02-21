@@ -25,8 +25,17 @@ get_header();
             echo '<div class="featured-caption"><p>' . $get_description . '</p></div>';
           }
 
-          echo '<div class="hero-form-container"><h3>Enter your postcode</h3>';
-          echo do_shortcode( '[contact-form-7 id="118" html_id="hero-form" html_class="for post-code-submit" title="Contact form 1"]' );
+          echo '<div class="hero-form-container"><h3>Enter your postcode</h3>'; ?>
+          
+          <form id="hero-form" class="post-code-submit" action="/postcode" method="get">
+            <input type="text" name="postcode" pattern="[a-zA-Z0-9\s]+" placeholder="For an initial no obligation cash offer" />
+
+            <p class="submit-button">
+              <input type="submit" value="Submit" />
+            </p>
+          </form>
+        
+        <?php
           echo '</div>';
         ?>
       </div>
