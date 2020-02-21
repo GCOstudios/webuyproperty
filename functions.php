@@ -163,13 +163,13 @@ add_action( 'widgets_init', 'webuyproperty_widgets_init' );
 function webuyproperty_scripts() {
   wp_enqueue_style( 'webuyproperty-aoscss', 'https://unpkg.com/aos@next/dist/aos.css', array(), '' );
 
-	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200217' );
+	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200220' );
 
   wp_enqueue_script( 'webuyproperty-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
   
   wp_enqueue_script( 'webuyproperty-aosjs', 'https://unpkg.com/aos@next/dist/aos.js', array(), '', true );
 
-  wp_enqueue_script( 'webuyproperty-main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '20200217', true );
+  wp_enqueue_script( 'webuyproperty-main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '20200220', true );
   
   wp_enqueue_script( 'webuyproperty-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
