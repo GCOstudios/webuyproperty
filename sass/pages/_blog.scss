@@ -1,3 +1,6 @@
+.error404,
+.archive,
+.search,
 .single-post,
 .blog {
 
@@ -35,6 +38,18 @@
       font-size: cre(25px);
       font-weight: 500;
     }
+  }
+}
+
+.error404 {
+
+  .page-header {
+    margin-bottom: cre(60px);
+  }
+
+  .search-form,
+  .widget {
+    margin-bottom: cre(40px);
   }
 }
 
