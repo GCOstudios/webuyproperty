@@ -1,33 +1,127 @@
-#site-navigation {
-  margin-left: auto;
+// Burger button
+// ==============================
+.menu-toggle {
+  @include button-reset;
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: cre(30px);
+  right: cre(10px);
+  width: cre(60px);
+  height: cre(50px);
 
-  .menu-toggle {
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 50%;
+    content: '';
+    background: $m1;
+  }
+
+  &:before {
+    margin-top: cre(2px * -4);
+    transform: translate(-50%, -50%);
+    transition:
+      margin-top .3s,
+      transform .3s;
+  }
+
+  &:after {
+    box-shadow: 0 cre(2px * 4) 0 0 $m1;
+    transform: translate(-50%, -50%);
+    transition:
+      box-shadow .3s,
+      transform .3s;
+  }
+
+  @media screen and (min-width: 600px) {
     display: none;
+  }
+
+  // Active Trigger State
+  // ================================
+
+  .menu-is-open & {
+
+    &:before {
+      margin-top: 0;
+      transform:
+        translate(-50%, -50%)
+        rotate(-45deg);
+    }
+
+    &:after {
+      box-shadow: none;
+      transform:
+        translate(-50%, -50%)
+        rotate(45deg);
+    }
+  }
+}
+
+// The Navigation Menu
+// ==================================
+#site-navigation {
+  display: none;
+  background-color: $m1;
+  padding: cre(10px) cre(20px) cre(40px);
+  width: 100%;
+  position: absolute;
+  top: cre(112px);
+
+  .menu-is-open & {
+    display: block;
+  }
+
+  @media screen and (min-width: 600px) {
+    display: block;
+    background-color: transparent;
+    margin-left: auto;
+    padding: 0;
+    width: auto;
+    position: static;
   }
 
   // Primary menu container
   .menu {}
 
   // Unorder list links
-  .nav-menu {
+  #primary-menu {
     @include list-reset;
-    display: flex;
-    flex-flow: row wrap;
+
+    @media screen and (min-width: 600px) {
+      display: flex;
+      flex-flow: row wrap;
+    }
 
     > li {
-      margin-right: cre(40px);
 
       a {
-        font-size: cre(21px);
+        display: block;
         font-weight: bold;
-        line-height: cre(25px);
-        color: $m1;
-        transition: color 0.5s;
+        border-bottom: 1px solid white;
+        color: white;
+        padding: cre(20px);
+      }
 
-        &:focus,
-        &:hover {
-          text-decoration: none;
-          color: darken($m1, 10%);
+      @media screen and (min-width: 600px) {
+        margin-right: cre(30px);
+
+        a {
+          font-size: cre(21px);
+          line-height: cre(25px);
+          border-bottom: 0;
+          color: $m1;
+          transition: color 0.5s;
+  
+          &:focus,
+          &:hover {
+            text-decoration: none;
+            color: darken($m1, 10%);
+          }
         }
       }
 
