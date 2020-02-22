@@ -35,15 +35,22 @@
   }
 
   .featured-caption {
-    font-size: cre(43px);
-    font-weight: 600;
-    line-height: cre(43px);
+    font-size: cre(32px);
     color: white;
     padding: cre(20px);
     position: absolute;
     bottom: cre(60px);
-    right: cre(40px);
+    right: cre(10px);
     text-align: right;
+
+    @media screen and (min-width: 600px) {
+      font-size: cre(43px);
+      font-weight: 600;
+      line-height: cre(43px);
+      position: absolute;
+      bottom: cre(60px);
+      right: cre(40px);
+    }
 
     p {
       margin-bottom: 0;
