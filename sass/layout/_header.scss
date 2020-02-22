@@ -5,7 +5,7 @@
   align-items: center;
   background-color: rgba(white, 0.9);
   border-bottom: 1px solid $m1;
-  padding-left: cre(50px);
+  padding-left: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -13,6 +13,10 @@
   height: cre(113px);
   transition: 0.5s ease;
   z-index: 10;
+
+  @media screen and (min-width: 600px) {
+    padding-left: cre(50px);
+  }
 
   &.darken-header {
     background-color: rgba(white, 1);
@@ -24,6 +28,22 @@
 
   // Site Branding
   .site-branding {
+    max-width: cre(191px);
+    padding: cre(20px) 0 cre(20px) cre(20px);
+
+    @media screen and (min-width: 600px) {
+      max-width: none;
+      padding: 0;
+    }
+
+    .custom-logo-link {
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
 
     .site-title {
       text-transform: uppercase;
