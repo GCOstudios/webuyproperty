@@ -61,9 +61,10 @@
   }
 
   .search-field {
-    border: 0;
+    border: 1px solid $m1;
     border-radius: 8px 0 0 8px;
     padding: 0.5rem 1rem;
+    width: 100%;
   }
 
   .search-submit {
