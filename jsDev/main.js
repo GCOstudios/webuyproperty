@@ -3,6 +3,28 @@ jQuery(function($) {
   'use strict';
 
   var ENHANCEMENTS;
+  var  NAVIGATION;
+
+  // ================================
+  // NAVIGATION
+  // ================================
+
+  NAVIGATION = {
+
+    init: function() {
+      this.burgerBtn();
+    },
+
+    // Burger Button
+    // ==============================================
+    burgerBtn: function() {
+      var $burger = $('.menu-toggle');
+
+      $burger.on('click', function() {
+        $('body').toggleClass('menu-is-open');
+      });
+    }
+  };
 
   // ================================
   // Enhancements
@@ -101,11 +123,27 @@ jQuery(function($) {
     // AOS animations
     // ==============================================
     animations: function() {
-      $('.fade-up').attr('data-aos', 'fade-up');
-      $('.fade-right').attr('data-aos', 'fade-right');
-      $('.fade-down').attr('data-aos', 'fade-down');
-      $('.fade-left').attr('data-aos', 'fade-left');
-      $('.fade-in').attr('data-aos', 'fade-in');
+      // media query event handler
+      if (matchMedia) {
+        var mq = window.matchMedia("(min-width: 600px)");
+
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+      }
+
+      // media query change
+      function WidthChange(mq) {
+        if (mq.matches) {
+          // window width is at least 600px
+          $('.fade-up').attr('data-aos', 'fade-up');
+          $('.fade-right').attr('data-aos', 'fade-right');
+          $('.fade-down').attr('data-aos', 'fade-down');
+          $('.fade-left').attr('data-aos', 'fade-left');
+          $('.fade-in').attr('data-aos', 'fade-in');
+        } else {
+          // window width is less than 600px
+        }
+      }
 
       setTimeout(function() {
         AOS.init({
@@ -119,5 +157,6 @@ jQuery(function($) {
   };
   
   ENHANCEMENTS.init();
+  NAVIGATION.init();
 
 }); //jQuery
