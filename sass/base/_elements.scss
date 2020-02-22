@@ -17,3 +17,9 @@ a {
     color: darken($m1, 10%);
   }
 }
+
+// responsive images
+img {
+  max-width: 100%;
+  height: auto;
+}
