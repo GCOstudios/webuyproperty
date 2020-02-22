@@ -1,0 +1,93 @@
+.single-post,
+.blog {
+
+  .site-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: auto auto cre(80px);
+    max-width: cre(960px);
+    padding-top: cre(180px);
+  }
+
+  #primary {
+    max-width: cre(640px);
+
+    article {
+      margin-bottom: cre(60px);
+
+      .entry-header {
+        margin-bottom: cre(40px);
+      }
+    }
+  }
+
+  #secondary {
+    background-color: rgba($m1, 0.02);
+    max-width: cre(280px);
+    padding: cre(20px);
+
+    .widget {
+      margin-bottom: cre(40px);
+    }
+
+    .widget-title {
+      font-size: cre(25px);
+      font-weight: 500;
+    }
+  }
+}
+
+// Singe Posts
+// =========================
+.single-post {
+
+  .post-navigation {
+    margin-bottom: cre(40px);
+  }
+
+  #comments {
+    border-top: 1px solid $m1;
+    padding-top: cre(10px);
+
+    .comments-title {
+      font-size: cre(25px);
+      font-weight: 500;
+      margin-bottom: cre(20px);
+    }
+
+    #respond {
+      border-top: 1px solid $m1;
+      padding-top: cre(10px);
+
+      #reply-title {
+        font-size: cre(25px);
+        font-weight: 500;
+        margin-bottom: cre(20px);
+      }
+    }
+  }
+
+  #commentform {
+    background-color: rgba($m1, 0.02);
+    padding: cre(20px) cre(40px);
+
+    label {
+      display: block;
+    }
+
+    .submit {
+      @include button-reset;
+      background-color: $m2;
+      border-radius: cre(10px);
+      color: white;
+      padding: cre(10px) cre(20px);
+      transition: 0.3s ease;
+
+      &:focus,
+      &:hover {
+        background-color: darken($m2, 15%);
+      }
+    }
+  }
+}
