@@ -68,8 +68,14 @@
 // ==================================
 .hero-form-container {
   position: absolute;
-  bottom: cre(70px);
-  left: cre(80x);
+  top: cre(150px);
+  left: cre(20px);
+
+  @media screen and (min-width: 600px) {
+    top: auto;
+    bottom: cre(70px);
+    left: cre(80x);
+  }
 
   .postcode-complete &,
   .contact-us & {
@@ -77,9 +83,14 @@
   }
 
   h3 {
+    font-size: cre(24px);
     color: white;
     margin-bottom: cre(20px);
     text-shadow: 0 -1px 8px rgba(0,0,0,0.5);
+
+    @media screen and (min-width: 600px) {
+      font-size: cre(29px);
+    }
   }
 }
 
@@ -87,7 +98,7 @@
 
   input[type='text'] {
     padding: 25px 10px 26px;
-    width: 100%;
+    width: 65%;
 
     @media screen and (min-width: 600px) {
       width: cre(374px);
