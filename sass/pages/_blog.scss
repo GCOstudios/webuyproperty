@@ -6,15 +6,27 @@
 
   .site-content {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: space-between;
-    margin: auto auto cre(80px);
+    margin: auto cre(20px) cre(80px);
     max-width: cre(960px);
     padding-top: cre(180px);
+
+    @media screen and (min-width: 600px) {
+      flex-flow: row;
+      justify-content: space-between;
+      margin: auto auto cre(80px);
+      max-width: cre(960px);
+    }
   }
 
   #primary {
+    margin-bottom: cre(80px);
     max-width: cre(640px);
+
+    @media screen and (min-width: 600px) {
+      margin-bottom: 0;
+    }
 
     article {
       margin-bottom: cre(60px);
@@ -89,6 +101,13 @@
 
     label {
       display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea {
+      width: 100%;
     }
 
     .submit {
