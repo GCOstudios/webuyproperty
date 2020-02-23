@@ -6,6 +6,36 @@
   }
 }
 
+// Global on all pages
+.welcome-message {
+  font-size: cre(30px);
+  padding: cre(40px);
+  text-align: center;
+}
+
+// Welcome Blue and mobile padding
+// =================================
+@media screen and (max-width: 600px) {
+  .welcome-blue {
+    padding-top: cre(100px)!important;
+    padding-left: cre(20px);
+    padding-right: cre(20px);
+
+    p {
+      font-size: cre(33px)!important;
+      line-height: cre(43px);
+    }
+  } // .welcome-blue
+
+  .mobile-padding {
+    padding: cre(30px);
+  }
+
+  a {
+    word-wrap: break-word;
+  }
+}
+
 // How it works page
 // ==============================
 .jump-block {
