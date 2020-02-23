@@ -39,7 +39,11 @@
 // How it works page
 // ==============================
 .jump-block {
-  height: cre(68px);
+  height: 100%;
+
+  @media screen and (min-width: 600px) {
+    height: cre(68px);
+  }
 
   div {
     height: 100%;
@@ -49,10 +53,16 @@
   .custom-nav-items {
     @include list-reset;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+
+    @media screen and (min-width: 600px) {
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+    }
 
     li {
       display: flex;
@@ -68,8 +78,12 @@
 
     a {
       color: white;
-      padding: cre(21px) cre(25px) cre(22px);
+      padding: cre(10px) cre(25px);
       transition: 0.3s;
+
+      @media screen and (min-width: 600px) {
+        padding: cre(21px) cre(25px) cre(22px);
+      }      
 
       &:focus,
       &:hover {
