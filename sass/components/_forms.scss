@@ -5,7 +5,12 @@
   flex-flow: row;
   justify-content: flex-start;
   width: 100%;
-  max-width: cre(539px);
+  max-width: cre(280px);
+  margin: auto;
+
+  @media screen and (min-width: 600px) {
+    max-width: cre(539px);
+  }
 
   p {
     margin: 0;
