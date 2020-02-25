@@ -25,10 +25,10 @@ get_header();
             echo '<div class="featured-caption"><p>' . $get_description . '</p></div>';
           }
 
-          echo '<div class="hero-form-container"><h3>Enter your postcode</h3>'; ?>
+          echo '<div class="hero-form-container"><h3>For an initial <br>no obligation <span>cash offer</span></h3>'; ?>
           
           <form id="hero-form" class="post-code-submit" action="/postcode" method="get">
-            <input type="text" name="postcode" pattern="[a-zA-Z0-9\s]+" placeholder="For an initial no obligation cash offer" />
+            <input type="text" name="postcode" pattern="[a-zA-Z0-9\s]+" placeholder="Enter your postcode" />
 
             <p class="submit-button">
               <input type="submit" value="Submit" />
