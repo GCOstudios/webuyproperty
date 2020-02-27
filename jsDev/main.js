@@ -140,6 +140,11 @@ jQuery(function($) {
           $('.fade-down').attr('data-aos', 'fade-down');
           $('.fade-left').attr('data-aos', 'fade-left');
           $('.fade-in').attr('data-aos', 'fade-in');
+
+          $('.box-item').each(function(index) {
+            var $this = $(this);
+            $this.attr('data-aos', 'fade-up').attr('data-aos-delay', ((index + 1) * 4) + '00');
+          });
         } else {
           // window width is less than 600px
         }
