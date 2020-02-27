@@ -5,6 +5,11 @@
 
   a {
     color: white;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
