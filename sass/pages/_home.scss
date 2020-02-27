@@ -88,6 +88,8 @@
   // Quick Section
   // =================================
   .quick-section-container {
+    font-size: cre(25px);
+    line-height: 1.5;
     position: relative;
 
     &::before {
@@ -152,6 +154,14 @@
       .email-column {
         margin-left: cre(100px);
         position: relative;
+
+        a {
+
+          &:focus,
+          &:hover {
+            text-decoration: underline;
+          }
+        }
   
         &::before {
           @include font-icon('\e905');
