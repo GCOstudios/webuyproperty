@@ -119,10 +119,22 @@
   ul {
 
     > li {
-      font-size: cre(24px);
+      font-size: cre(25px);
       font-weight: 500;
+      line-height: 1.5;
       color: $m3;
+      margin-bottom: cre(60px);
     }
+  }
+}
+
+.how-it-works {
+
+  .ab-accordion-title {
+    font-size: cre(23px);
+    line-height: cre(24px);
+    background-color: $m3;
+    color: $m5;
   }
 }
 
@@ -138,5 +150,17 @@
 
   a {
     color: $m3;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .site-footer {
+
+    a {
+      color: white;
+    }
   }
 }
