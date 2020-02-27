@@ -163,17 +163,17 @@ add_action( 'widgets_init', 'webuyproperty_widgets_init' );
 function webuyproperty_scripts() {
   wp_enqueue_style( 'webuyproperty-aoscss', 'https://unpkg.com/aos@next/dist/aos.css', array(), '' );
 
-	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200225' );
+	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200227' );
 
   wp_enqueue_script( 'webuyproperty-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
   
   wp_enqueue_script( 'webuyproperty-aosjs', 'https://unpkg.com/aos@next/dist/aos.js', array(), '', true );
 
-  wp_enqueue_script( 'webuyproperty-main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '20200222', true );
+  wp_enqueue_script( 'webuyproperty-main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '20200227', true );
   
   wp_enqueue_script( 'webuyproperty-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-  wp_enqueue_script( 'webuyproperty-feefo', 'https://api.feefo.com/api/javascript/example-retail-merchant', array(), '20200216', true );
+  wp_enqueue_script( 'webuyproperty-feefo', 'https://api.feefo.com/api/javascript/suresale', array(), '20200227', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
