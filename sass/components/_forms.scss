@@ -223,7 +223,8 @@
   input[type='email'],
   input[type='tel'],
   input[type='submit'],
-  input[type='text'] {
+  input[type='text'],
+  textarea {
     width: 100%;
     padding: cre(30px);
   }
@@ -243,6 +244,14 @@
     &:hover {
       background-color: darken($m2, 15%);
     }
+  }
+
+  .text-description {
+    font-size: cre(25px);
+    font-weight: 600;
+    line-height: cre(34px);
+    color: $m3;
+    padding: cre(20px) 0 0 cre(20px);
   }
 
   .check-item {
