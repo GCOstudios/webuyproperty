@@ -229,6 +229,14 @@
     padding: cre(30px);
   }
 
+  select {
+    font-size: cre(18px);
+    font-weight: 600;
+    line-height: cre(35px);
+    padding: cre(30px);
+    width: 100%;
+  }
+
   input[type='submit'] {
     font-size: cre(29px);
     font-weight: 600;
