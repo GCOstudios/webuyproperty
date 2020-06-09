@@ -209,13 +209,13 @@
   input {
     font-size: cre(25px);
     font-weight: 600;
-    line-height: cre(34px);
+    line-height: 1.5;
     color: $m3;
 
     &::placeholder {
-      font-size: cre(25px);
+      font-size: cre(18px);
       font-weight: 600;
-      line-height: cre(34px);
+      line-height: 1.5;
       color: $m3;
     }
   }
@@ -226,26 +226,26 @@
   input[type='text'],
   textarea {
     width: 100%;
-    padding: cre(30px);
+    padding: cre(10px) cre(20px);
   }
 
   select {
     font-size: cre(18px);
     font-weight: 600;
-    line-height: cre(35px);
-    padding: cre(30px);
+    line-height: 1.5;
+    padding: cre(15px) cre(20px);
     width: 100%;
   }
 
   input[type='submit'] {
-    font-size: cre(29px);
+    font-size: cre(24px);
     font-weight: 600;
-    line-height: cre(35px);
+    line-height: 1.5;
     @include button-reset;
     background-color: #B20D6E;
     border-radius: cre(11px);
     color: white;
-    padding: cre(30px);
+    padding: cre(20px);
     text-transform: uppercase;
     transition: 0.3s ease;
 
@@ -255,9 +255,9 @@
   }
 
   .text-description {
-    font-size: cre(25px);
+    font-size: cre(20px);
     font-weight: 600;
-    line-height: cre(34px);
+    line-height: 1.5;
     color: $m3;
     padding: cre(20px) 0 0 cre(20px);
   }
@@ -265,7 +265,7 @@
   .check-item {
     font-size: cre(21px);
     font-weight: 500;
-    line-height: cre(34px);
+    line-height: 1.5;
     color: $m3;
     padding: cre(20px) 0;
     text-align: center;
