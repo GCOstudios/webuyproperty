@@ -1,3 +1,19 @@
+#secondary {
+
+  .widget {
+    
+    a {
+      color: $d1;
+
+      &:focus,
+      &:hover {
+        color: darken($m6, 10%);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .footer-widget-1 {
   width: 100%;
   max-width: cre(350px);
