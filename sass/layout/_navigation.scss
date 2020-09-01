@@ -37,7 +37,7 @@
       transform .3s;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     display: none;
   }
 
@@ -71,12 +71,13 @@
   width: 100%;
   position: absolute;
   top: cre(112px);
+  left: 0;
 
   .menu-is-open & {
     display: block;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1000px) {
     display: block;
     background-color: transparent;
     margin-left: auto;
@@ -92,7 +93,7 @@
   #primary-menu {
     @include list-reset;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 1000px) {
       display: flex;
       flex-flow: row wrap;
     }
@@ -107,8 +108,10 @@
         padding: cre(20px);
       }
 
-      @media screen and (min-width: 600px) {
-        margin-right: cre(30px);
+      // From 600px and higher
+      @media screen and (min-width: 1000px) {
+        margin-right: cre(10px);
+        margin-right: 0;
 
         a {
           font-size: cre(21px);
@@ -123,6 +126,11 @@
             color: darken($m1, 10%);
           }
         }
+      } // @media screen and (min-width: 600px)
+
+      // From 1200px and higher
+      @media screen and (min-width: 1200px) {
+        margin-right: cre(30px);
       }
 
       &.current-menu-item {
