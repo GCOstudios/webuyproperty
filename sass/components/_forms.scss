@@ -203,7 +203,7 @@
   margin: auto;
 
   span {
-    width: 100%;
+    // width: 100%;
   }
 
   input {
@@ -279,6 +279,24 @@
 
     .wpcf7-list-item-label {
       display: none;
+    }
+  }
+
+  // Columns styles
+  // =====================
+  .columns-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    span {
+      display: inline-block;
+      width: 49%;
+    }
+
+    input {
+      // width: 49%;
     }
   }
 }
