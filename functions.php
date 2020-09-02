@@ -163,7 +163,7 @@ add_action( 'widgets_init', 'webuyproperty_widgets_init' );
 function webuyproperty_scripts() {
   wp_enqueue_style( 'webuyproperty-aoscss', 'https://unpkg.com/aos@next/dist/aos.css', array(), '' );
 
-	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200306' );
+	wp_enqueue_style( 'webuyproperty-style', get_stylesheet_uri(), array(), '20200901' );
 
   wp_enqueue_script( 'webuyproperty-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
   
