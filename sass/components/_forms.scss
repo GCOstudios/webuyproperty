@@ -201,6 +201,16 @@
   width: 100%;
   max-width: cre(580px);
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 600px) {
+    max-width: cre(700px);
+  }
+
+  @media screen and (min-width: 1000px) {
+    max-width: cre(900px);
+  }
 
   span {
     // width: 100%;
@@ -216,7 +226,7 @@
       font-size: cre(18px);
       font-weight: 600;
       line-height: 1.5;
-      color: $m3;
+      // color: $m3;
     }
   }
 
@@ -285,18 +295,20 @@
   // Columns styles
   // =====================
   .columns-2 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
 
-    span {
-      display: inline-block;
-      width: 49%;
+
+    @media screen and (min-width: 600px) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
     }
 
-    input {
-      // width: 49%;
+    .column-item {
+      width: 100%;
+
+      @media screen and (min-width: 600px) {
+        width: 49%;
+      }
     }
   }
 }
