@@ -105,7 +105,7 @@
         font-weight: bold;
         border-bottom: 1px solid white;
         color: white;
-        padding: cre(20px);
+        padding: cre(20px) cre(10px);
       }
 
       // From 600px and higher
@@ -128,9 +128,14 @@
         }
       } // @media screen and (min-width: 600px)
 
-      // From 1200px and higher
       @media screen and (min-width: 1200px) {
-        margin-right: cre(30px);
+        margin-right: 0;
+        padding: cre(20px);
+      }
+
+      // From 1300px and higher
+      @media screen and (min-width: 1300px) {
+        // margin-right: cre(30px);
       }
 
       &.current-menu-item {
